@@ -1,0 +1,147 @@
+:root {
+    --cube: 50vmin;
+}
+
+.textBox {
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 70%;
+    position: absolute;
+    background: rgba(68, 62, 62, 0.76);
+    color: white;
+    top: 15%;
+    right: 15%;
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-family: "JetBrains Mono ExtraLight", monospace;
+}
+
+.text {
+    margin-left: 8px;
+    white-space: pre-line;
+    padding: 15px;
+}
+
+.cube_wrap {
+    perspective: 1000px;
+    perspective-origin: 50% var(--cube);
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    background: black;
+    overflow: hidden;
+}
+
+.cube {
+    position: relative;
+    width: var(--cube);
+    height: var(--cube);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(45deg);
+    margin: 0 auto;
+    user-select: none;
+}
+
+.inner_wrap {
+    position: relative;
+    width: var(--cube);
+    height: var(--cube);
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.cube .face {
+    position: absolute;
+    background: rgba(0, 149, 255, 0.25);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 3px solid rgb(56, 56, 131);
+}
+
+.front {
+    transform: rotateY(0deg) translateZ(calc(var(--cube) * 0.5));
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(calc(var(--cube) * 0.5));
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(calc(var(--cube) * 0.5));
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(calc(var(--cube) * 0.5));
+}
+
+.top {
+    transform: rotateX(90deg) translateY(calc(var(--cube) * -0.5));
+    transform-origin: top left;
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateY(calc(var(--cube) * 0.5));
+    transform-origin: bottom left;
+}
+
+.inner1 {
+    transform: rotateX(0) rotateY(90deg) translateY(0px);
+}
+
+.inner2 {
+    transform: rotateX(90deg) translateY(0px);
+}
+
+.inner3 {
+}
+
+.cube .inner {
+    border: 3px solid #17dcd9;
+    backface-visibility: visible !important;
+    border-radius: 100%;
+}
+
+/*.inner::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  border-bottom: 5px solid black;
+}
+
+.inner::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  border-left: 5px solid black;
+}*/
+
+@keyframes spin {
+    from {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    to {
+        transform: rotateX(1turn) rotateY(1turn);
+    }
+}
+
+.love {
+    color: red;
+}

@@ -1,0 +1,40 @@
+#root{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #D4DBE2;
+    height: 100rex;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 rgba(255, 255, 255, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-track-piece{
+    visibility: hidden;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0);
+}

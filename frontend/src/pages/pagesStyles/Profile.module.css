@@ -1,0 +1,225 @@
+.wrapper {
+    min-height: 100vh;
+    background: rgba(183, 175, 190, 0.95);
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftSide {
+    display: flex;
+    background: #3f3d3d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 0;
+    min-height: 100%;
+    box-shadow: 0 0 0.7em .25em rgba(63, 61, 61, 0.84),
+    0 0 0.8em .1em rgba(63, 61, 61, 0.84),
+    inset 0 0 .4em .25em rgba(63, 61, 61, 0.84);
+    margin: 5% 0 2%;
+    border-radius: 5%;
+}
+
+img {
+    padding: 10px;
+}
+
+.person {
+    width: 85%;
+    max-height: 40%;
+    border-radius: 20px;
+    background: rgba(219, 159, 250, 0.09);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-columns: minmax(110px, 180px);
+    overflow: scroll;
+    color: #D4DBE2;
+}
+
+.person::-webkit-scrollbar {
+    width: 0;
+}
+
+.contactChange{
+    border-radius: 10px;
+    background: #2a2828;
+    padding: 5px;
+    color: #D4DBE2;
+}
+
+.submitContacts{
+    border-radius: 10px;
+    background: #2a2828;
+    padding: 5px;
+    color: #D4DBE2;
+}
+
+.submitContacts:hover{
+    background: #00c4ff;
+    font-weight: bold;
+    color: white;
+}
+
+.contactChange:hover{
+    background: #00c4ff;
+    font-weight: bold;
+    color: white;
+}
+
+.inputContact {
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.info {
+
+}
+
+.buttons {
+    margin-top: 20%;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    margin-bottom: 40px;
+    --glow-color: rgb(217, 176, 255); /* Обводка и текст */
+    --glow-spread-color: rgba(123, 7, 232, 0.78); /* Shadow */
+    --btn-color: rgb(60, 35, 82);
+    border: .2em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 0.7em .25em var(--glow-color),
+    0 0 0.8em .1em var(--glow-spread-color),
+    inset 0 0 .4em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.button.buttonR {
+    --glow-color: rgb(255, 176, 176); /* Обводка и текст */
+    --glow-spread-color: rgba(232, 7, 86, 0.78); /* Shadow */
+    --btn-color: rgb(82, 35, 40);
+}
+
+.button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+
+.rightSide {
+    width: 60%;
+    padding: 0;
+    background: #3f3d3d;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0.7em .25em rgba(63, 61, 61, 0.84),
+    0 0 0.8em .1em rgba(63, 61, 61, 0.84),
+    inset 0 0 .4em .25em rgba(63, 61, 61, 0.84);
+    margin: 5% 0 2%;
+    border-radius: 5%;
+}
+
+.switcher {
+    margin-top: 5%;
+}
+
+.results {
+    color: #070000;
+    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-height: 500px;
+    overflow: scroll;
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 0 0 0.7em .25em rgba(79, 76, 76, 0.78),
+    0 0 0.8em .1em rgba(79, 76, 76, 0.78),
+    inset 0 0 .4em .25em rgba(79, 76, 76, 0.78);
+}
+
+.results::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+.radioInputs {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #6e6666;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+    z-index: 99;
+}
+
+.radioInputs .radio {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radioInputs .radio input {
+    display: none;
+}
+
+.radioInputs .radio .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgb(255, 255, 255);
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.radioInputs .radio input:checked + .name {
+    background-color: #3f3d3d;
+    font-weight: 600;
+}

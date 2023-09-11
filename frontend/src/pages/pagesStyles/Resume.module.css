@@ -1,0 +1,94 @@
+.resume__wrapper{
+    height: 100rex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.buttons{
+    margin-left: auto;
+    background: #adadb6;
+    margin-top: 30px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.55),
+                -2px -2px 4px rgba(255, 255, 255, 0.55);
+    align-items: center;
+}
+
+.link{
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+    background: none;
+    height: 100%;
+    padding: 15px;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+}
+
+.link:hover{
+    color: white;
+    background: rgb(0, 159, 255);
+}
+
+.resume{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #BFC1CB;
+    min-width: 50%;
+    border-radius: 12px 12px 12px 12px;
+    border: 2px solid #000000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.goals{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.skills{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.languages{
+    font-size: 18px;
+    padding: 10px;
+}
+
+h5{
+    margin-bottom: 5px;
+}
+
+.skill{
+    margin-left: 8px;
+}
+
+
+

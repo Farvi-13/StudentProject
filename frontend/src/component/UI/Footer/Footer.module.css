@@ -1,0 +1,16 @@
+.footer{
+    min-height: 100px;
+    bottom: 0;
+    background: black;
+    font-family: 'VT323', monospace ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: #A1A2A7;
+    padding-right: 10px;
+}

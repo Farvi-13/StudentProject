@@ -1,0 +1,59 @@
+.registration{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(69.86% 181.98% at 54.17% 52.45%, #00FFF0 2.6%, #37B4FA 10.94%, #2F2E74 32.29%, #D278C9 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    position: absolute;
+}
+
+.reg__wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.context {
+    margin-top: 60px;
+    height:665px;
+    width: 800px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.53),
+    -6px -6px 15px rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    max-height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login {
+
+    font-size: 14px;
+    color: white;
+    box-shadow: #00FFF0;
+}

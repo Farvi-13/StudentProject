@@ -1,0 +1,111 @@
+.input {
+    font-family: monospace;
+    min-width: 500px;
+    outline: none;
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3f7fe;
+    transition: .3s;
+    color: #3b82f6;
+}
+
+.input__title::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+}
+
+.input__description::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+}
+
+.input:focus {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 0 4px #3b83f65f
+}
+
+.input__title {
+    min-height: 15px;
+}
+
+.input__description{
+    min-height: 300px;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagsLang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagsLangContainer{
+    display: flex;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.bttn:hover {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+    0 0 20px #008cff,
+    0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+.texts{
+
+}

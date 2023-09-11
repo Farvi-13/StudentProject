@@ -1,0 +1,33 @@
+.publication {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: rgba(183, 175, 190, 0.95);
+    border-radius: 8%;
+    width: 70%;
+    display: flex;
+}
+
+h2{
+    margin: 0;
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    min-height: 40px;
+}
+
+.description{
+    min-width: 300px;
+    width: 70%;
+}
+
+.publ__footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
